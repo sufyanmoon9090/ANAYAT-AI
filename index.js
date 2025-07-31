@@ -69,14 +69,14 @@ const {
 if (!fs.existsSync(__dirname + '/sessions/creds.json')) {
     if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
     
-    const sessdata = config.SESSION_ID.replace("EDITH-MD~", '');
+    const sessdata = config.SESSION_ID.replace("ARSLAN-MD~", '');
     try {
         // Decode base64 string
         const decodedData = Buffer.from(sessdata, 'base64').toString('utf-8');
         
         // Write decoded data to creds.json
         fs.writeFileSync(__dirname + '/sessions/creds.json', decodedData);
-        console.log("Session loaded From https://Bandaheali.site ✅");
+        console.log("Session loaded✅");
     } catch (err) {
         console.error("Error decoding session data:", err);
         throw err;
