@@ -44,7 +44,7 @@ const {
   const path = require('path')
   const prefix = config.PREFIX
   
-  const ownerNumber = ['923237045919']
+  const ownerNumber = ['923452401207']
   
   const tempDir = path.join(os.tmpdir(), 'cache-temp')
   if (!fs.existsSync(tempDir)) {
@@ -120,8 +120,8 @@ const port = process.env.PORT || 9090;
   console.log('Plugins installed successful ✅')
   console.log('Bot connected to whatsapp ✅')
   
-  let up = `*Hello there Arslan-MD User! \ud83d\udc4b\ud83c\udffb* \n\n> Simple , Straight Forward But Loaded With Features \ud83c\udf8a, Meet Arslan-MD WhatsApp Bot.\n\n *Thanks for using Arslan-MD \ud83d\udea9* \n\n> Join WhatsApp Channel :- ⤵️\n \nhttps://whatsapp.com/channel/0029VarfjW04tRrmwfb8x306 \n\n- *YOUR PREFIX:* = ${prefix}\n\nDont forget to give star to repo ⬇️\n\nhttps://github.com/Arslan-MD/Arslan_MD\n\n> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ArslanMD Official ❣️ \ud83d\udda4`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/yj7zp0.png` }, caption: up })
+  let up = `*Hello there ANAYAT-AI User! \ud83d\udc4b\ud83c\udffb* \n\n> Simple , Straight Forward But Loaded With Features \ud83c\udf8a, Meet ANAYAT-AI WhatsApp Bot.\n\n *Thanks for using ANAYAT-AI \ud83d\udea9* \n\n> Join WhatsApp Channel :- ⤵️\n \nhttps://whatsapp.com/channel/0029VbAm8LqL2ATpxklIct2g \n\n- *YOUR PREFIX:* = ${prefix}\n\nDont forget to give star to repo ⬇️\n\nhttps://github.com/ANAYAT-AI/ANAYAT-AI\n\n> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ANAYAT-AI Official ❣️ \ud83d\udda4`;
+    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/szymtd.jpg` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
@@ -776,7 +776,7 @@ if (!isReact && config.CUSTOM_REACT === 'true') {
   }
   
   app.get("/", (req, res) => {
-  res.send("ARSLAN MD STARTED ✅");
+  res.send("ANAYAT-AI STARTED ✅");
   });
   app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
   setTimeout(() => {
