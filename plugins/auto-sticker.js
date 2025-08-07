@@ -17,7 +17,7 @@ cmd({
             from,
             {
               sticker: { url: data[keyword] },
-              package: 'Arslan_MD'
+              package: '𝑨𝑵𝑨𝒀𝑨𝑻-𝑨𝑰'
             },
             { quoted: mek }
           );
