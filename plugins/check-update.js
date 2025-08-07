@@ -29,7 +29,7 @@ cmd({
             return reply("✅ Your Arslan_MD bot is already up-to-date!");
         }
 
-        await reply("🚀 Updating Arslan_MD Bot...");
+        await reply("🚀 Updating ANAYAT-AI Bot...");
 
         // Download the latest code
         const zipPath = path.join(__dirname, "latest.zip");
@@ -44,7 +44,7 @@ cmd({
 
         // Copy updated files, preserving config.js and app.json
         await reply("🔄 Replacing files...");
-        const sourcePath = path.join(extractPath, "Arslan_MD-main");
+        const sourcePath = path.join(extractPath, "ANAYAT-AI-main");
         const destinationPath = path.join(__dirname, '..');
         copyFolderSync(sourcePath, destinationPath);
 
