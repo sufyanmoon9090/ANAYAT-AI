@@ -53,8 +53,8 @@ async (conn, mek, m, { from, sender, pushname, reply }) => {
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363348739987203@newsletter',
-                        newsletterName: '𝐀𝐫𝐬𝐥𝐚𝐧_𝐌𝐃',
+                        newsletterJid: '120363420933039839@newsletter',
+                        newsletterName: '𝑨𝑵𝑨𝒀𝑨𝑻-𝑨𝑰',
                         serverMessageId: 143
                     }
                 }
@@ -72,8 +72,8 @@ async (conn, mek, m, { from, sender, pushname, reply }) => {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363348739987203@newsletter',
-                    newsletterName: '𝐀𝐫𝐬𝐥𝐚𝐧_𝐌𝐃',
+                    newsletterJid: '120363420933039839@newsletter',
+                    newsletterName: '𝑨𝑵𝑨𝒀𝑨𝑻-𝑨𝑰',
                     serverMessageId: 143
                 }
             }
@@ -134,15 +134,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/yj7zp0.png` },
+                image: { url: `https://files.catbox.moe/szymtd.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363348739987203@newsletter',
-                        newsletterName: "𝐀𝐫𝐬𝐥𝐚𝐧_𝐌𝐃",
+                        newsletterJid: '120363420933039839@newsletter',
+                        newsletterName: "𝑨𝑵𝑨𝒀𝑨𝑻-𝑨𝑰",
                         serverMessageId: 143
                     }
                 }
@@ -200,15 +200,15 @@ async (conn, mek, m, { from, quoted, reply }) => {
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/yj7zp0.png` },
+                image: { url: `https://files.catbox.moe/szymtd.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363348739987203@newsletter',
-                        newsletterName: '𝐀𝐫𝐬𝐥𝐚𝐧_𝐌𝐃',
+                        newsletterJid: '120363420933039839@newsletter',
+                        newsletterName: '𝑨𝑵𝑨𝒀𝑨𝑻-𝑨𝑰',
                         serverMessageId: 144
                     }
                 }
@@ -283,15 +283,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/yj7zp0.png` },
+                image: { url: `https://files.catbox.moe/szymtd.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363348739987203@newsletter',
-                        newsletterName: '𝐀𝐫𝐬𝐥𝐚𝐧_𝐌𝐃',
+                        newsletterJid: '120363420933039839@newsletter',
+                        newsletterName: '𝑨𝑵𝑨𝒀𝑨𝑻-𝑨𝑰',
                         serverMessageId: 143
                     }
                 }
@@ -361,15 +361,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/yj7zp0.png` },
+                image: { url: `https://files.catbox.moe/szymtd.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363348739987203@newsletter',
-                        newsletterName: '𝐀𝐫𝐬𝐥𝐚𝐧_𝐌𝐃',
+                        newsletterJid: '120363420933039839@newsletter',
+                        newsletterName: '𝑨𝑵𝑨𝒀𝑨𝑻-𝑨𝑰',
                         serverMessageId: 143
                     }
                 }
@@ -428,15 +428,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/yj7zp0.png` },
+                image: { url: `https://files.catbox.moe/szymtd.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363348739987203@newsletter',
-                        newsletterName: '𝐀𝐫𝐬𝐥𝐚𝐧_𝐌𝐃',
+                        newsletterJid: '120363420933039839@newsletter',
+                        newsletterName: '𝑨𝑵𝑨𝒀𝑨𝑻-𝑨𝑰',
                         serverMessageId: 143
                     }
                 }
@@ -499,15 +499,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/yj7zp0.png` },
+                image: { url: `https://files.catbox.moe/szymtd.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363348739987203@newsletter',
-                        newsletterName: '𝐀𝐫𝐬𝐥𝐚𝐧_𝐌𝐃',
+                        newsletterJid: '120363420933039839@newsletter',
+                        newsletterName: '𝑨𝑵𝑨𝒀𝑨𝑻-𝑨𝑰',
                         serverMessageId: 143
                     }
                 }
@@ -551,15 +551,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/yj7zp0.png` },
+                image: { url: `https://files.catbox.moe/szymtd.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363348739987203@newsletter',
-                        newsletterName: '𝐀𝐫𝐬𝐥𝐚𝐧_𝐌𝐃',
+                        newsletterJid: '120363420933039839@newsletter',
+                        newsletterName: '𝑨𝑵𝑨𝒀𝑨𝑻-𝑨𝑰',
                         serverMessageId: 143
                     }
                 }
@@ -610,15 +610,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/yj7zp0.png` },
+                image: { url: `https://files.catbox.moe/szymtd.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363348739987203@newsletter',
-                        newsletterName: '𝐀𝐫𝐬𝐥𝐚𝐧_𝐌𝐃',
+                        newsletterJid: '120363420933039839@newsletter',
+                        newsletterName: '𝑨𝑵𝑨𝒀𝑨𝑻-𝑨𝑰',
                         serverMessageId: 143
                     }
                 }
@@ -671,15 +671,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/yj7zp0.png` },
+                image: { url: `https://files.catbox.moe/szymtd.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363348739987203@newsletter',
-                        newsletterName: '𝐀𝐫𝐬𝐥𝐚𝐧_𝐌𝐃',
+                        newsletterJid: '120363420933039839@newsletter',
+                        newsletterName: '𝑨𝑵𝑨𝒀𝑨𝑻-𝑨𝑰',
                         serverMessageId: 143
                     }
                 }
@@ -740,15 +740,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/yj7zp0.png` },
+                image: { url: `https://files.catbox.moe/szymtd.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363348739987203@newsletter',
-                        newsletterName: '𝐀𝐫𝐬𝐥𝐚𝐧_𝐌𝐃',
+                        newsletterJid: '120363420933039839@newsletter',
+                        newsletterName: '𝑨𝑵𝑨𝒀𝑨𝑻-𝑨𝑰',
                         serverMessageId: 143
                     }
                 }
@@ -799,15 +799,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/yj7zp0.png` },
+                image: { url: `https://files.catbox.moe/szymtd.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363348739987203@newsletter',
-                        newsletterName: '𝐀𝐫𝐬𝐥𝐚𝐧_𝐌𝐃',
+                        newsletterJid: '120363420933039839@newsletter',
+                        newsletterName: '𝑨𝑵𝑨𝒀𝑨𝑻-𝑨𝑰',
                         serverMessageId: 143
                     }
                 }
