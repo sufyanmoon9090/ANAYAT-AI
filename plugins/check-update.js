@@ -1,69 +1,77 @@
+// check.update.js
 const { cmd } = require("../command");
-const axios = require('axios');
-const fs = require('fs');
+const axios = require("axios");
+const fs = require("fs");
 const path = require("path");
 const AdmZip = require("adm-zip");
-const { setCommitHash, getCommitHash } = require('../data/updateDB');
+const { setCommitHash, getCommitHash } = require("../data/updateDB");
 
 cmd({
     pattern: "update",
     alias: ["upgrade", "sync"],
-    react: '🆕',
+    react: "🆕",
     desc: "Update the bot to the latest version.",
     category: "misc",
     filename: __filename
 }, async (client, message, args, { reply, isOwner }) => {
-    if (!isOwner) return reply("This command is only for the bot owner.");
+    if (!isOwner) return reply("❌ Only the bot owner can run this command.");
 
     try {
-        await reply("🔍 Checking for ANAYAT-AI updates...");
+        await reply("🔍 Checking for updates...");
 
-        // Fetch the latest commit hash from GitHub
-        const { data: commitData } = await axios.get("https://api.github.com/repos/Arslan-MD/Arslan_MD/commits/main");
+        // ✅ GitHub repo details (changed to Anayat-ai)
+        const repoOwner = "Anayat-ai"; // <-- tumhara GitHub username / org
+        const repoName = "Anayat-ai";  // <-- tumhara repo name
+
+        // 🔄 Latest commit hash from GitHub
+        const { data: commitData } = await axios.get(`https://api.github.com/repos/${repoOwner}/${repoName}/commits/main`);
         const latestCommitHash = commitData.sha;
 
-        // Get the stored commit hash from the database
+        // 🗂️ Current commit hash from DB
         const currentHash = await getCommitHash();
 
         if (latestCommitHash === currentHash) {
-            return reply("✅ Your Anayat_AI bot is already up-to-date!");
+            return reply("✅ Your Anayat-AI bot is already up-to-date!");
         }
 
-        await reply("🚀 Updating Anayat_AI Bot...");
+        await reply("🚀 New update found! Updating the bot...");
 
-        // Download the latest code
+        // 📥 Download repo zip
         const zipPath = path.join(__dirname, "latest.zip");
-        const { data: zipData } = await axios.get("https://github.com/Arslan-MD/Arslan_MD/archive/main.zip", { responseType: "arraybuffer" });
+        const { data: zipData } = await axios.get(
+            `https://github.com/${repoOwner}/${repoName}/archive/refs/heads/main.zip`,
+            { responseType: "arraybuffer" }
+        );
         fs.writeFileSync(zipPath, zipData);
 
-        // Extract ZIP file
-        await reply("📦 Extracting the latest code...");
-        const extractPath = path.join(__dirname, 'latest');
+        // 📦 Extract zip
+        const extractPath = path.join(__dirname, "latest");
         const zip = new AdmZip(zipPath);
         zip.extractAllTo(extractPath, true);
 
-        // Copy updated files, preserving config.js and app.json
-        await reply("🔄 Replacing files...");
-        const sourcePath = path.join(extractPath, "Anayat_AI-main");
-        const destinationPath = path.join(__dirname, '..');
+        // ⚡ Correct extracted folder name
+        const sourcePath = path.join(extractPath, `${repoName}-main`);
+        const destinationPath = path.join(__dirname, "..");
+
+        // 🔄 Copy new files but skip config.js and app.json
         copyFolderSync(sourcePath, destinationPath);
 
-        // Save the latest commit hash to the database
+        // ✅ Save latest commit hash
         await setCommitHash(latestCommitHash);
 
-        // Cleanup
+        // 🧹 Cleanup
         fs.unlinkSync(zipPath);
         fs.rmSync(extractPath, { recursive: true, force: true });
 
-        await reply("✅ Update complete! Restarting the bot...");
+        await reply("✅ Update complete! Restarting bot...");
         process.exit(0);
     } catch (error) {
-        console.error("Update error:", error);
-        return reply("❌ Update failed. Please try manually.");
+        console.error("❌ Update Error:", error);
+        reply("⚠️ Update failed. Please try again later.");
     }
 });
 
-// Helper function to copy directories while preserving config.js and app.json
+// 📂 Helper function to copy folders while skipping some files
 function copyFolderSync(source, target) {
     if (!fs.existsSync(target)) {
         fs.mkdirSync(target, { recursive: true });
@@ -74,8 +82,8 @@ function copyFolderSync(source, target) {
         const srcPath = path.join(source, item);
         const destPath = path.join(target, item);
 
-        // Skip config.js and app.json
-        if (item === "config.js" || item === "app.json") {
+        // 🚫 Skip important custom files
+        if (["config.js", "app.json"].includes(item)) {
             console.log(`Skipping ${item} to preserve custom settings.`);
             continue;
         }
