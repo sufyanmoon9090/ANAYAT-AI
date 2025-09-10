@@ -1,7 +1,7 @@
 {
   "name": "ANAYAT-AI",
   "description": "Javascript WhatsApp bot made by 𝘼𝙉𝘼𝙔𝘼𝙏-𝙆𝙃𝘼𝙉",
-  "logo": "https://files.catbox.moe/8lxlpq.jpg",
+  "logo": "https://files.catbox.moe/rexuf8.jpg",
   "keywords": ["ANAYAT-AI"],
   "success_url": "/",
 
@@ -85,7 +85,7 @@
     "OWNER_NAME": {
       "description": "Type Bot Owner Name.",
       "required": false,
-      "value": "*χ нαѕι*"
+      "value": "*ANAYAT KING*"
 }, 
 
     "OWNER_NUMBER": {
