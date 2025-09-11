@@ -33,7 +33,7 @@
 
 ## 🔑 𝙂𝙀𝙏 𝙎𝙀𝙎𝙎𝙄𝙊𝙉
 <p align="center">
-  <a href="https://equivalent-sibeal-anayatai-61f7c848.koyeb.app/">
+  <a href="https://anayat-ai-pair.onrender.com/">
     <img src="https://img.shields.io/badge/Get-Session_ID-00BFFF?style=for-the-badge&logo=whatsapp&logoColor=white" />
   </a>
 </p>
