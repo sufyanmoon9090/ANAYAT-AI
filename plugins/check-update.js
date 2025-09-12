@@ -53,7 +53,7 @@ cmd({
     const lastUpdate = fs.statSync(localVersionPath).mtime.toLocaleString();
 
     // GitHub stats
-    const githubRepo = 'https://github.com/Arslan-MD/Arslan_MD';
+    const githubRepo = 'https://github.com/ANAYAT-AI/ANAYAT-AI/tree/main';
 
     // Check update status
     let updateMessage = `✅ Your Anayat-ai bot is up-to-date!`;
@@ -69,7 +69,7 @@ Use *.update* to update.`;
       `📌 *Bot Name:* ArslanMD-MD\n🔖 *Current Version:* ${localVersion}\n📢 *Latest Version:* ${latestVersion}\n📂 *Total Plugins:* ${pluginCount}\n🔢 *Total Commands:* ${totalCommands}\n\n` +
       `💾 *System Info:*\n⏳ *Uptime:* ${uptime}\n📟 *RAM Usage:* ${ramUsage}MB / ${totalRam}MB\n⚙️ *Host Name:* ${hostName}\n📅 *Last Update:* ${lastUpdate}\n\n` +
       `📝 *Changelog:*\n${latestChangelog}\n\n` +
-      `⭐ *GitHub Repo:* ${githubRepo}\n👤 *Owner:* [𝐀𝐍𝐀𝐘𝐀𝐓-𝐀𝐈](https://github.com/Arslan-MD)\n\n${updateMessage}\n\n🚀 *Hey! Don't forget to fork & star the repo!*`;
+      `⭐ *GitHub Repo:* ${githubRepo}\n👤 *Owner:* [𝐀𝐍𝐀𝐘𝐀𝐓-𝐀𝐈](https://github.com/ANAYAT-AI/ANAYAT-AI/tree/main)\n\n${updateMessage}\n\n🚀 *Hey! Don't forget to fork & star the repo!*`;
 
     // Send the status message with an image
     await conn.sendMessage(from, {
