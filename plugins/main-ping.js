@@ -3,16 +3,16 @@ const { cmd, commands } = require('../command');
 
 // Array of different fancy text styles for ARSLAN-MD
 const botNameStyles = [
-    "⒜⒭⒮⒧⒜⒩_⒨⒟",
-    "🅰🆁🆂🅻🅰🅽_🅼🅳",
-    "🅐🅡🅢🅛🅐🅝_🅜🅓",
-    "𝓐𝓻𝓼𝓵𝓪𝓷_𝓜𝓓",
-    "𝕬𝖗𝖘𝖑𝖆𝖓_𝕸𝕯",
-    "Ａｒｓｌａｎ＿ＭＤ",
-    "Áŕśĺáń_ḾD",
-    "αяѕℓαη_м∂",
-    "ȺɍsłȺn_MĐ",
-    "ₐᵣₛₗₐₙ_ₘD"
+    "⒜⒩⒜⒴⒜⒯-⒜⒤",
+    "🅰🅽🅰🆈🅰🆃-🅰🅸",
+    "ＡＮＡＹＡＴ－ＡＩ",
+    "𝓐𝓝𝓐𝓨𝓐𝓣-𝓐𝓘",
+    "𝙰𝙽𝙰𝚈𝙰𝚃-𝙰𝙸",
+    "🅐🅝🅐🅨🅐🅣-🅐🅘",
+    "𝘼𝙉𝘼𝙔𝘼𝙏-𝘼𝙄",
+    "𝘈𝘕𝘈𝘠𝘈𝘛-𝘈𝘐",
+    "𝑨𝑵𝑨𝒀𝑨𝑻-𝑨𝑰",
+    "𝔸ℕ𝔸𝕐𝔸𝕋-𝔸𝕀"
 ];
 
 // Track current style index
@@ -63,8 +63,8 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363348739987203@newsletter',
-                    newsletterName: "𝓐𝓻𝓼𝓵𝓪𝓷_𝓜𝓓",
+                    newsletterJid: '120363420933039839@newsletter',
+                    newsletterName: "𝑨𝑵𝑨𝒀𝑨𝑻-𝑨𝑰",
                     serverMessageId: 143
                 }
             }
@@ -90,7 +90,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const message = await conn.sendMessage(from, { text: '*PINGING...*' })
         const endTime = Date.now()
         const ping = endTime - startTime
-        await conn.sendMessage(from, { text: `*🔥 ARSLAN-MD SPEED : ${ping}ms*` }, { quoted: message })
+        await conn.sendMessage(from, { text: `*🔥 𝑨𝑵𝑨𝒀𝑨𝑻-𝑨𝑰 SPEED : ${ping}ms*` }, { quoted: message })
     } catch (e) {
         console.log(e)
         reply(`${e}`)
