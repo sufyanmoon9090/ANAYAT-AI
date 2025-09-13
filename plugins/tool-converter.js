@@ -35,7 +35,7 @@ cmd({
         // Send result
         await client.sendMessage(from, {
             image: imageBuffer,
-            caption: "> 𝓐𝓻𝓼𝓵𝓪𝓷_𝓜𝓓 🤍",
+            caption: "> 𝐀𝐍𝐀𝐘𝐀𝐓-𝐀𝐈 🤍",
             mimetype: 'image/png'
         }, { quoted: message });
 
