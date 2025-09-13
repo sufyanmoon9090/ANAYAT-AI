@@ -22,7 +22,7 @@ cmd({
 ⟬★⟭────────────────
 ⟬★⟭ 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗧𝗜𝗢𝗡
 ⟬★⟭────────────────
-│ 👑  Owner » *ANAYAT KING*
+│ 👑  Owner » *ANAYAT* *KING*
 │ 🤖  Baileys » *Multi Device*
 │ 💻  Type » *NodeJs*
 │ 🚀  Platform » *Heroku*
