@@ -7,7 +7,7 @@ cmd({
     react: "✅",
     desc: "Get pairing code for ARSLAN-MD bot",
     category: "download",
-    use: ".pair 923237045XXX",
+    use: ".pair 923452401XXX",
     filename: __filename
 }, async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, senderNumber, reply }) => {
     try {
@@ -16,7 +16,7 @@ cmd({
 
         // Validate phone number format
         if (!phoneNumber || phoneNumber.length < 10 || phoneNumber.length > 15) {
-            return await reply("❌ Please provide a valid phone number without `+`\nExample: `.pair 923237045XXX`");
+            return await reply("❌ Please provide a valid phone number without `+`\nExample: `.pair 923452401XXX`");
         }
 
         // Make API request to get pairing code
@@ -27,7 +27,7 @@ cmd({
         }
 
         const pairingCode = response.data.code;
-        const doneMessage = "> *ARSLAN-MD PAIRING COMPLETED*";
+        const doneMessage = "> *ANAYAT-AI PAIRING COMPLETED*";
 
         // Send initial message with formatting
         await reply(`${doneMessage}\n\n*Your pairing code is:* ${pairingCode}`);
