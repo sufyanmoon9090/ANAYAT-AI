@@ -26,7 +26,7 @@ cmd({
     const botNumber = conn.user.id.split(":")[0] + '@s.whatsapp.net';
 
     if (m.mentionedJid.includes(botNumber)) {
-      const thumbnailRes = await axios.get(config.MENU_IMAGE_URL || "https://files.catbox.moe/lcpy9f.jpg", {
+      const thumbnailRes = await axios.get(config.MENU_IMAGE_URL || "https://files.catbox.moe/rexuf8.jpg", {
         responseType: 'arraybuffer'
       });
       const thumbnailBuffer = Buffer.from(thumbnailRes.data, 'binary');
@@ -40,8 +40,8 @@ cmd({
           forwardingScore: 999,
           isForwarded: true,
           externalAdReply: {
-            title: config.BOT_NAME || "ARSLAN-MD 🥀",
-            body: config.DESCRIPTION || "𝓐𝓻𝓼𝓵𝓪𝓷_𝓜𝓓 🤌💗",
+            title: config.BOT_NAME || "ANAYAT-AI 🥀",
+            body: config.DESCRIPTION || "𝐀𝐍𝐀𝐘𝐀𝐓-𝐀𝐈 🤌💗",
             mediaType: 1,
             renderLargerThumbnail: true,
             thumbnail: thumbnailBuffer,
