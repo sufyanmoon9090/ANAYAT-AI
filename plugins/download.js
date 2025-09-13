@@ -220,7 +220,7 @@ cmd({
 ┃ 📅 *Updated On:* ${app.updated}
 ┃ 👨‍💻 *Developer:* ${app.developer.name}
 ╰━━━━━━━━━━━━━━━┈⊷
-🔗 *Powered By Arslan-MD*`;
+🔗 *Powered By 𝐀𝐍𝐀𝐘𝐀𝐓-𝐀𝐈*`;
 
     await conn.sendMessage(from, { react: { text: "⬆️", key: m.key } });
 
@@ -271,7 +271,7 @@ cmd({
         document: { url: downloadUrl },
         mimetype: response.data.result.mimetype,
         fileName: response.data.result.fileName,
-        caption: "*𝓐𝓻𝓼𝓵𝓪𝓷_𝓜𝓓 💔*"
+        caption: "*𝐀𝐍𝐀𝐘𝐀𝐓-𝐀𝐈💔*"
       }, { quoted: m });
 
       await conn.sendMessage(from, { react: { text: "✅", key: m.key } });
