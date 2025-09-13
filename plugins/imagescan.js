@@ -75,7 +75,7 @@ cmd({
     await reply(
       `🔍 *Image Analysis Results*\n\n` +
       `${scanResponse.data.result}\n\n` +
-      `> 𝐀𝐍𝐀𝐘𝐀𝐓-𝐀𝐈 💜`
+      `> *𝐀𝐍𝐀𝐘𝐀𝐓-𝐀𝐈* 💜`
     );
 
   } catch (error) {
